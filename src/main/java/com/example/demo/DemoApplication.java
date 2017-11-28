@@ -13,11 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
     @RestController
     public static class RootController {
-        @GetMapping("/")
-        public String root() {
-            return "Hello";
-        }
-
         @GetMapping("/l")
         public String longMessage(@RequestParam(value = "n", defaultValue = "1024") int n) {
             return Stream.generate(() -> ".").limit(n).collect(Collectors.joining(""));
