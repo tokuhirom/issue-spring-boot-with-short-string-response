@@ -54,3 +54,7 @@ Curl can get the bytes when the server returns 171+ bytes.
     Connection: close
     
     ..........................................................................................................................................................................Connection closed by foreign host.
+
+## Note
+
+This issue is reproduced on OSX curl only. It's not reproduced on linxu curl.
